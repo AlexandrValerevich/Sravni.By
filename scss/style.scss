@@ -21,4 +21,7 @@ body
     margin: 0 auto;
 }
 
+@import "./button/button.scss";
+
 @import "./header/header.scss";
+@import "./introduce/introduce.scss";

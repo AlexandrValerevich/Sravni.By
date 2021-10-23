@@ -6,6 +6,13 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+.introduce__inner {
+  background: #FDFDFD;
+  border-radius: 20xp;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+  padding: 26px 46px;
+}
+
 html {
   line-height: 1.15;
   /* 1 */
@@ -354,6 +361,17 @@ body {
   margin: 0 auto;
 }
 
+.button {
+  display: inline-block;
+  padding: 11px 20px;
+  background-color: #3181EC;
+  border-radius: 45px;
+  box-shadow: 5px 1px 17px rgba(0, 0, 0, 0.3);
+  color: #FFF;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 .header {
   padding: 45px 10px;
 }
@@ -412,6 +430,30 @@ body {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.introduce__inner {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 50%;
+  justify-content: space-between;
+}
+.introduce__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.introduce__title {
+  font-weight: 600;
+  font-size: 2.5em;
+}
+.introduce__image {
+  padding: 0px 100px;
+}
+.introduce__image .img {
+  width: 597px;
+  height: 553px;
 }
 
 /*# sourceMappingURL=style.css.map */
