@@ -1,1 +1,2 @@
-sass ./scss/style.scss ./style/style.css
+pug .\pug\index.pug --pretty -o .\
+sass ./scss/style.scss ./css/style.css
