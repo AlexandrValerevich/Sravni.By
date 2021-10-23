@@ -1,1 +1,24 @@
-@import "../node_modules/normalize.css/normalize.css";
+@use 'varibalsAndMixins' as *;
+@import "../node_modules/normalize.css/normalize.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+*, *::after, *::before
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #fafafa;
+    font-family: $font-stack;
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
+
+.container
+{
+    max-width: 1480px;
+    margin: 0 auto;
+}
+
+@import "./header/header.scss";

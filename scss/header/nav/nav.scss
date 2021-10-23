@@ -1,0 +1,32 @@
+.nav
+{
+    &__list
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        list-style: none;
+    }
+
+    &__item
+    {
+        display: block;
+        padding: 7px 34px;
+
+        &_active
+        {
+            background-color: #8EB6F6;
+            border-radius: 45px;
+        }
+    }
+
+    &__link
+    {
+        color: #000;
+        text-decoration: none;
+    }
+
+
+}
