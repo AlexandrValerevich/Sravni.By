@@ -6,13 +6,13 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
-.introduce__inner, .about-shop__inner {
+.introduce__inner, .about-shop__inner, .cards-details__card {
   background: #FDFDFD;
   border-radius: 20px;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
-.introduce, .about-shop {
+.introduce, .about-shop, .cards-details {
   margin-bottom: 54px;
 }
 
@@ -350,6 +350,8 @@ template {
 
 *, *::after, *::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -365,6 +367,10 @@ body {
 .container {
   max-width: 1480px;
   margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 .button {
@@ -505,6 +511,75 @@ body {
 }
 .about-shop__image-item .img {
   width: 70%;
+}
+
+.cards-details__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cards-details__card {
+  flex: 1 1 25%;
+}
+.cards-details__card:not(.cards-details__card:last-child) {
+  margin-right: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0 45px 45px;
+}
+.card__img {
+  flex: 1 0 20%;
+  text-align: center;
+  position: relative;
+}
+.card__img .img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.card__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card__title {
+  margin-bottom: 17px;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.card__text {
+  margin-bottom: 40px;
+}
+
+.footer {
+  background-color: #8EB6F6;
+}
+.footer__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 40px 0;
+}
+.footer__column {
+  flex: 1 0 50%;
+  list-style-type: none;
+}
+.footer__item {
+  text-decoration: none;
+}
+.footer__item a {
+  color: black;
+}
+.footer__item a:hover {
+  color: cornsilk;
 }
 
 /*# sourceMappingURL=style.css.map */

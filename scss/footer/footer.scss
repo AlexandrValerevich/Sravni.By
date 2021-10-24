@@ -1,0 +1,36 @@
+.footer
+{
+    background-color: #8EB6F6;
+
+    &__inner
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        padding: 40px 0;
+    }
+
+    &__column
+    {
+        flex: 1 0 50%;
+        list-style-type: none;
+    }
+
+    &__item
+    {
+        text-decoration: none;
+
+        a
+        {
+            color: black;
+        }
+
+        a:hover
+        {
+            color: cornsilk;
+        }
+        
+    }
+}

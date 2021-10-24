@@ -5,6 +5,8 @@
 *, *::after, *::before
 {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html
@@ -26,8 +28,15 @@ body
     margin: 0 auto;
 }
 
+a
+{
+    text-decoration: none;
+}
+
 @import "./button/button.scss";
 
 @import "./header/header.scss";
 @import "./introduce/introduce.scss";
 @import "./about-shop/about-shop.scss";
+@import "./cards-details/cards-details.scss";
+@import "./footer/footer.scss";
