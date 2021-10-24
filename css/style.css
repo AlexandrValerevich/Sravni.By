@@ -6,14 +6,13 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
-.introduce__inner {
+.introduce__inner, .about-shop__inner {
   background: #FDFDFD;
-  border-radius: 20xp;
+  border-radius: 20px;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
-  padding: 26px 46px;
 }
 
-.introduce {
+.introduce, .about-shop {
   margin-bottom: 54px;
 }
 
@@ -353,11 +352,14 @@ template {
   box-sizing: border-box;
 }
 
-body {
-  background-color: #fafafa;
+html {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: 500;
+}
+
+body {
+  background-color: #fafafa;
 }
 
 .container {
@@ -440,6 +442,7 @@ body {
 }
 
 .introduce__inner {
+  padding: 26px 46px;
   display: flex;
   flex-direction: row;
   flex-basis: 50%;
@@ -462,6 +465,46 @@ body {
 .introduce__image .img {
   max-width: 597px;
   max-height: 553px;
+}
+
+.about-shop__inner {
+  padding: 0px 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.about-shop__image {
+  flex: 1 0 50%;
+  text-align: center;
+}
+.about-shop__image .img {
+  max-width: 90%;
+}
+.about-shop__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1 0 50%;
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+.about-shop__text {
+  font-size: 1.2em;
+}
+.about-shop__image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about-shop__image-item {
+  flex: 1 0 50%;
+  text-align: center;
+}
+.about-shop__image-item .img {
+  width: 70%;
 }
 
 /*# sourceMappingURL=style.css.map */

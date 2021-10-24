@@ -5,6 +5,7 @@
     &__inner
     {
         @extend %common-box;
+        padding: 26px 46px;
 
         display: flex;
         flex-direction: row;

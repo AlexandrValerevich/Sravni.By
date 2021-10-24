@@ -7,12 +7,17 @@
     box-sizing: border-box;
 }
 
-body
+html
 {
-    background-color: #fafafa;
     font-family: $font-stack;
     font-size: $font-size;
     font-weight: $font-weight;
+}
+
+body
+{
+    background-color: #fafafa;
+    
 }
 
 .container
@@ -25,3 +30,4 @@ body
 
 @import "./header/header.scss";
 @import "./introduce/introduce.scss";
+@import "./about-shop/about-shop.scss";
