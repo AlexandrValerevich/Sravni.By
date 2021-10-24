@@ -1,5 +1,7 @@
 .introduce
 {
+    @extend %block-spacing;
+    
     &__inner
     {
         @extend %common-box;
@@ -17,6 +19,8 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
+
+        padding-bottom: 43px;
     }
 
     &__title
@@ -31,8 +35,8 @@
 
         .img
         {
-            width: 597px;
-            height: 553px;
+            max-width: 597px;
+            max-height: 553px;
         }
     }
 }
