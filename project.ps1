@@ -1,2 +1,6 @@
-pug .\pug\index.pug --pretty -o .\
-sass ./scss/style.scss ./css/style.css
+#Pug compile
+pug .\src\pug\index.pug --pretty -o .\
+
+
+#sass compile
+sass ./src/scss/style.scss ./css/style.css

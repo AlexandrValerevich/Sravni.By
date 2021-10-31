@@ -1,12 +1,12 @@
+@use "../varibals-and-mixins.scss" as global;
+
 .footer
 {
-    background-color: #8EB6F6;
+    background-color: global.$bgc-footer;
 
     &__inner
     {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include global.flex-container-costomaize(row, space-between);
         align-items: flex-end;
 
         padding: 40px 0;
@@ -15,13 +15,10 @@
     &__column
     {
         flex: 1 0 50%;
-        list-style-type: none;
     }
 
     &__item
     {
-        text-decoration: none;
-
         a
         {
             color: black;
@@ -31,6 +28,5 @@
         {
             color: cornsilk;
         }
-        
     }
 }

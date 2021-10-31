@@ -1,19 +1,19 @@
+@use "../varibals-and-mixins.scss" as global;
+
 .cards-details
 {
     @extend %block-spacing;
 
     &__inner
     {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include global.flex-container-costomaize(row, space-between);
     }
 
     &__card
     {
         @extend %common-box;
 
-        flex: 1 1 25%;
+        flex: 1 0 30%;
 
         &:not(&:last-child)
         {
