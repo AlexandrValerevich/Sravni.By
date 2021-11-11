@@ -8,10 +8,7 @@ html(lang="en")
         link(rel="stylesheet", href=".\\css\\all.min.css")
         title Document
     body
-        include .\components\header.pug
-        include .\components\introduce.pug
-        include .\components\about-shop.pug
-        include .\components\cards-details.pug
-        include .\components\footer.pug
-
-        
+        .page
+            include .\header\header.pug
+            include .\content\__home\home.pug
+            include .\footer\footer.pug

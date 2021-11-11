@@ -268,6 +268,24 @@ a {
   margin-bottom: 54px;
 }
 
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.cards-details__card, .about-shop__inner, .introduce__inner {
+  background: #fdfdfd;
+  border-radius: 20px;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.cards-details, .about-shop, .introduce {
+  margin-bottom: 54px;
+}
+
 .button {
   display: inline-block;
   background-color: #3181EC;

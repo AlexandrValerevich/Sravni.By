@@ -1,9 +1,5 @@
 @use "../../varibals-and-mixins.scss" as global;
 
-
-
-
-
 .card
 {
     @include global.flex-container-costomaize(column, space-between);
