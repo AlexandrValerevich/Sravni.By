@@ -30,6 +30,11 @@
         font-size: global.$font-size-h1;
     }
 
+    &__subtitle
+    {
+        margin-bottom: 20px;
+    }
+
     &__image
     {
         flex: 1 0 50%;

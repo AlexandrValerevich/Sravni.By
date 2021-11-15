@@ -6,16 +6,17 @@
     align-items: center;
     text-align: center;
 
+    margin-bottom: 10px;
+    transform: translateY(-10px);
+
     padding: 20px 45px 45px;
 
     &__img
     {
-        min-height: 300px;
-
         .img{
-            max-width: 100%;
-            height: auto;
-            max-height: 300px;
+            object-fit: contain;
+            width: 250px;
+            height: 250px;
         }
     }
 

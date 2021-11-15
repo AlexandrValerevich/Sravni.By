@@ -270,6 +270,7 @@ a {
 
 .page {
   min-height: 100vh;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -413,6 +414,9 @@ a {
   font-weight: 600;
   font-size: 2.5em;
 }
+.introduce__subtitle {
+  margin-bottom: 20px;
+}
 .introduce__image {
   flex: 1 0 50%;
   text-align: center;
@@ -498,14 +502,12 @@ a {
 .cards-details__inner {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
+  align-content: center;
 }
 .cards-details__card {
-  flex: 1 0 30%;
-}
-.cards-details__card:not(.cards-details__card:last-child) {
-  margin-right: 20px;
+  flex: 0 0 25%;
 }
 
 .introduce__inner, .about-shop__inner, .cards-details__card {
@@ -525,15 +527,14 @@ a {
   flex-wrap: nowrap;
   align-items: center;
   text-align: center;
+  margin-bottom: 10px;
+  transform: translateY(-10px);
   padding: 20px 45px 45px;
 }
-.card__img {
-  min-height: 300px;
-}
 .card__img .img {
-  max-width: 100%;
-  height: auto;
-  max-height: 300px;
+  object-fit: contain;
+  width: 250px;
+  height: 250px;
 }
 .card__info {
   flex-grow: 1;
@@ -567,12 +568,14 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: flex-end;
   padding: 40px 0;
 }
 .footer__column {
   flex: 1 0 50%;
+  margin-bottom: 5px;
+  transform: translateY(-5px);
 }
 .footer__item a {
   color: black;

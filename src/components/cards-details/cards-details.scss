@@ -6,19 +6,15 @@
 
     &__inner
     {
-        @include global.flex-container-costomaize(row, space-between, wrap);
+        @include global.flex-container-costomaize(row, space-around, wrap);
+        align-content: center;
+
     }
 
     &__card
     {
         @extend %common-box;
-
-        flex: 1 0 30%;
-
-        &:not(&:last-child)
-        {
-            margin-right: 20px;
-        }       
+        flex: 0 0 25%; 
     }
 }
 
