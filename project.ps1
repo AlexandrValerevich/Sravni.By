@@ -1,6 +1,6 @@
 #Pug compile
 pug .\src\index.pug --pretty -o .\dest
-#pug .\src\catalog\catalog.pug --pretty -o .\dest\catalog
+pug .\src\catalog\catalog.pug --pretty -o .\dest\catalog
 
 
 #sass compile
