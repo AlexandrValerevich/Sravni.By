@@ -20,13 +20,22 @@ body
 a
 {
     text-decoration: none;
+    color: black;
 }
 
-@import "./components/container/container.scss";
-@import "./components/page/page.scss";
+// UI ellements
 @import "./components/button/button.scss";
+
+// Common ellements
 @import "./components/header/header.scss";
+@import "./components/footer/footer.scss";
+@import "./components/page/page.scss";
+@import "./components/container/container.scss";
+
+// Index ellements
 @import "./components/introduce/introduce.scss";
 @import "./components/about-shop/about-shop.scss";
 @import "./components/cards-details/cards-details.scss";
-@import "./components/footer/footer.scss";
+
+// Catalog ellements
+@import "./components/catalog-genre-filter/catalog-genre-filter.scss";
