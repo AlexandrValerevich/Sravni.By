@@ -1,5 +1,5 @@
-@use 'varibals-and-mixins.scss' as *;
-@import "./normalizer/normalize.scss";
+@use './components/varibals-and-mixins.scss' as *;
+@import "./components/normalizer/normalize.scss";
 
 //Подключение основного шрифта
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
@@ -22,11 +22,11 @@ a
     text-decoration: none;
 }
 
-@import "./container/container.scss";
-@import "./page/page.scss";
-@import "./button/button.scss";
-@import "./header/header.scss";
-@import "./introduce/introduce.scss";
-@import "./about-shop/about-shop.scss";
-@import "./cards-details/cards-details.scss";
-@import "./footer/footer.scss";
+@import "./components/container/container.scss";
+@import "./components/page/page.scss";
+@import "./components/button/button.scss";
+@import "./components/header/header.scss";
+@import "./components/introduce/introduce.scss";
+@import "./components/about-shop/about-shop.scss";
+@import "./components/cards-details/cards-details.scss";
+@import "./components/footer/footer.scss";

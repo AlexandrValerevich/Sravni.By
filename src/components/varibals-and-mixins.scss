@@ -1,8 +1,10 @@
 
 //Глобальные переменные
 $font-stack: 'Montserrat', sans-serif;;
-$font-size-basic: 20px;
+$font-size-basic: 16px;
+$font-size-text: 1.2em;
 $font-size-h1: 2.5em;
+$font-size-nav: 0.75em;
 $font-weight: 500;
 $font-wight-bold: 600;
 
@@ -13,9 +15,6 @@ $bgc-block: #fdfdfd;
 $border-radius-block: 20px;
 $space-between-block: 54px;
 
-//text
-$font-size-text: 1.2em;
-
 
 //btn
 $btn-color: #3181EC;
@@ -23,7 +22,7 @@ $btn-hover-color: #62a2f5;
 $btn-text-color: #fff;
 
 //container
-$bs-width-container: 1480px;
+$bs-width-container: 1240px;
 
 //footer
 $bgc-footer: #8EB6F6;
@@ -31,7 +30,6 @@ $bgc-footer: #8EB6F6;
 //nav
 $bgc-nav-item-active: #62a2f5;;
 $nav-text-color: #000;
-$nav-font-size: 0.65em;
 
 
 

@@ -231,7 +231,7 @@ ol, ul {
 
 html {
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -254,7 +254,7 @@ a {
 }
 
 .container {
-  max-width: 1480px;
+  max-width: 1240px;
   margin: 0 auto;
 }
 
@@ -352,7 +352,7 @@ a {
 }
 .nav__link {
   color: #000;
-  font-size: 0.65em;
+  font-size: 0.75em;
   font-weight: 600;
 }
 
@@ -394,6 +394,7 @@ a {
 
 .introduce__inner {
   padding: 26px 46px;
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -415,11 +416,13 @@ a {
 .introduce__image {
   flex: 1 0 50%;
   text-align: center;
-  padding: 0 75px;
-}
-.introduce__image .img {
-  max-width: 100%;
-  height: auto;
+  padding: 0 50px;
+  background-image: url("../image/introduce/introduce.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 450px;
+  height: 450px;
 }
 
 .cards-details__card, .introduce__inner, .about-shop__inner {
@@ -437,14 +440,22 @@ a {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: nowrap;
-  padding: 0px 70px;
+  padding: 0px 50px;
 }
 .about-shop__image {
   flex: 1 0 50%;
   text-align: center;
+  background-image: url("../image/about-shop/about-shop.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 450px;
+  height: 450px;
 }
 .about-shop__image .img {
-  max-width: 90%;
+  object-fit: cover;
+  width: 450px;
+  height: 450px;
 }
 .about-shop__info {
   display: flex;
@@ -488,7 +499,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 .cards-details__card {
   flex: 1 0 30%;

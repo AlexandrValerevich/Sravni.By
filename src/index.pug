@@ -9,6 +9,9 @@ html(lang="en")
         title Document
     body
         .page
-            include .\header\header.pug
-            include .\content\__home\home.pug
-            include .\footer\footer.pug
+            include .\components\header\header.pug
+            .page__content.content
+                include .\components\introduce\introduce.pug
+                include .\components\about-shop\about-shop.pug
+                include .\components\cards-details\cards-details.pug
+            include .\components\footer\footer.pug

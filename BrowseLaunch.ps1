@@ -2,7 +2,7 @@
 
 $pwd = pwd
 $path = $pwd[0].Path
-$file = "\index.html"
+$file = "\dest\index.html"
 
 $path = $path + $file
 

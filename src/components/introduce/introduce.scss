@@ -8,6 +8,7 @@
     {
         @extend %common-box;
         padding: 26px 46px;
+        overflow: hidden;
 
         @include global.flex-container-costomaize(row, space-between);
 
@@ -34,13 +35,21 @@
         flex: 1 0 50%;
         text-align: center;
 
-        padding: 0 75px;
+        padding: 0 50px;
+
+        background-image: url("../image/introduce/introduce.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 450px;
+        height: 450px;
         
-        .img
-        {
-            max-width: 100%;
-            height: auto;
-            //max-height: 553px;
-        }
+        // .img
+        // {
+        //     object-fit: cover;
+        //     width: 450px;
+        //     height: 450px;
+        //     //max-height: 553px;
+        // }
     }
 }

@@ -9,7 +9,7 @@
         @extend %common-box;
         @include global.flex-container-costomaize(row, space-between);
         
-        padding: 0px 70px;
+        padding: 0px 50px;
         
     }
 
@@ -18,9 +18,18 @@
         flex: 1 0 50%;
         text-align: center;
 
+        background-image: url("../image/about-shop/about-shop.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 450px;
+        height: 450px;
+
         .img
         {
-            max-width: 90%;
+            object-fit: cover;
+            width: 450px;
+            height: 450px;
         }
     }
 

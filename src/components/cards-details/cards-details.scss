@@ -6,7 +6,7 @@
 
     &__inner
     {
-        @include global.flex-container-costomaize(row, space-between);
+        @include global.flex-container-costomaize(row, space-between, wrap);
     }
 
     &__card
