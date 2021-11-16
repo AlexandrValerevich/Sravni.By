@@ -19,7 +19,7 @@
               </div>
               <nav class="nav header__nav">
                 <ul class="nav__list">
-                  <li class="nav__item nav__item_active"><a class="nav__link" href="D:/Code/Sravni.by/dest/index.html">Главная</a></li>
+                  <li class="nav__item"><a class="nav__link nav__link_active" href="D:/Code/Sravni.by/dest/index.html">Главная</a></li>
                   <li class="nav__item"><a class="nav__link" href="D:/Code/Sravni.by/dest/catalog/catalog.html">Каталог</a></li>
                   <li class="nav__item"><a class="nav__link" href="#">Акции</a></li>
                   <li class="nav__item"><a class="nav__link" href="#">Оплата</a></li>
@@ -34,16 +34,36 @@
         <div class="catalog-genre-filter">
           <div class="container">
             <div class="catalog-genre-filter__inner">
-              <div class="catalog-genre-filter__item item"><a class="item__link" href="#"> <img class="img" src="../image/catalog-genre-filter/filter__1.png" alt="">
+              <div class="catalog-genre-filter__item item"><a class="item__link" href="#"> <img class="img" src="../image/catalog-genre-filter/filter_1.png" alt="">
                   <p class="card__text">Художественная литература </p></a></div>
-              <div class="catalog-genre-filter__item item"><a class="item__link" href="#"> <img class="img" src="../image/catalog-genre-filter/filter__2.png" alt="">
+              <div class="catalog-genre-filter__item item"><a class="item__link" href="#"> <img class="img" src="../image/catalog-genre-filter/filter_2.png" alt="">
                   <p class="card__text">неХудожественная литература </p></a></div>
-              <div class="catalog-genre-filter__item item"><a class="item__link" href="#"> <img class="img" src="../image/catalog-genre-filter/filter__3.png" alt="">
+              <div class="catalog-genre-filter__item item"><a class="item__link" href="#"> <img class="img" src="../image/catalog-genre-filter/filter_3.png" alt="">
                   <p class="card__text">детская литература</p></a></div>
-              <div class="catalog-genre-filter__item item"><a class="item__link" href="#"> <img class="img" src="../image/catalog-genre-filter/filter__4.png" alt="">
+              <div class="catalog-genre-filter__item item"><a class="item__link" href="#"> <img class="img" src="../image/catalog-genre-filter/filter_4.png" alt="">
                   <p class="card__text">бизнес литература </p></a></div>
-              <div class="catalog-genre-filter__item item"><a class="item__link" href="#"> <img class="img" src="../image/catalog-genre-filter/filter__5.png" alt="">
+              <div class="catalog-genre-filter__item item"><a class="item__link" href="#"> <img class="img" src="../image/catalog-genre-filter/filter_5.png" alt="">
                   <p class="card__text">учебная литература</p></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-main">
+          <div class="container">
+            <div class="catalog-main__inner">
+              <div class="filter-bar">
+                <div class="filter-bar__search search-bar">
+                  <input class="input" type="text" name="search">
+                </div>
+                <div class="filter-bar__select select-bar">
+                  <label class="select__label" for="sort-select">Сортировать: </label>
+                  <select class="select" id="sort-select" name="sort">
+                    <option class="select__option" value="По возрастанию цены">По возрастанию цены</option>
+                    <option class="select__option" value="По убыванию цены">По убыванию цены</option>
+                    <option class="select__option" value="В алфавитном порядке">В алфавитном порядке</option>
+                    <option class="select__option" value="В обратном алфавитном порядке">В обратном алфавитном порядке</option>
+                  </select>
+                </div>
+              </div>
             </div>
           </div>
         </div>

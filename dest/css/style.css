@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
-.introduce__inner, .about-shop__inner, .cards-details__card, .catalog-genre-filter__inner {
+.introduce__inner, .about-shop__inner, .cards-details__card, .catalog-genre-filter__inner, .catalog-main__inner {
   background: #fdfdfd;
   border-radius: 20px;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
-.introduce, .about-shop, .cards-details, .catalog-genre-filter {
+.introduce, .about-shop, .cards-details, .catalog-genre-filter, .catalog-main {
   margin-bottom: 54px;
 }
 
@@ -244,13 +244,13 @@ a {
   color: black;
 }
 
-.catalog-genre-filter__inner, .cards-details__card, .about-shop__inner, .introduce__inner {
+.catalog-main__inner, .catalog-genre-filter__inner, .cards-details__card, .about-shop__inner, .introduce__inner {
   background: #fdfdfd;
   border-radius: 20px;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
-.catalog-genre-filter, .cards-details, .about-shop, .introduce {
+.catalog-main, .catalog-genre-filter, .cards-details, .about-shop, .introduce {
   margin-bottom: 54px;
 }
 
@@ -267,13 +267,13 @@ a {
   background: #62a2f5;
 }
 
-.catalog-genre-filter__inner, .cards-details__card, .about-shop__inner, .introduce__inner {
+.catalog-main__inner, .catalog-genre-filter__inner, .cards-details__card, .about-shop__inner, .introduce__inner {
   background: #fdfdfd;
   border-radius: 20px;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
-.catalog-genre-filter, .cards-details, .about-shop, .introduce {
+.catalog-main, .catalog-genre-filter, .cards-details, .about-shop, .introduce {
   margin-bottom: 54px;
 }
 
@@ -286,17 +286,17 @@ a {
   padding: 45px 10px;
 }
 
-.catalog-genre-filter__inner, .cards-details__card, .about-shop__inner, .introduce__inner {
+.catalog-main__inner, .catalog-genre-filter__inner, .cards-details__card, .about-shop__inner, .introduce__inner {
   background: #fdfdfd;
   border-radius: 20px;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
-.catalog-genre-filter, .cards-details, .about-shop, .introduce {
+.catalog-main, .catalog-genre-filter, .cards-details, .about-shop, .introduce {
   margin-bottom: 54px;
 }
 
-.nav__item_active, .nav__item:hover:not(.nav__item_active) {
+.nav__link_active, .nav__link:hover:not(.nav__link_active) {
   background-color: #62a2f5;
   border-radius: 45px;
   box-shadow: 5px 1px 17px rgba(0, 0, 0, 0.3);
@@ -310,24 +310,24 @@ a {
   align-items: baseline;
   align-content: center;
 }
-.nav__item {
-  padding: 7px 34px;
-  line-height: 16px;
-  transition: 0.1s;
-}
 .nav__item:not(.nav__item:last-child) {
   margin-right: 10px;
 }
 .nav__link {
+  display: inline-block;
+  padding: 7px 34px;
   color: #000;
   font-size: 0.75em;
   font-weight: 600;
+  line-height: 16px;
+  transition: border-radius 0.1s;
 }
-
 .search-bar {
   position: relative;
+  display: inline-block;
 }
 .search-bar .input {
+  width: 100%;
   position: relative;
   display: block;
   border: 0;
@@ -350,13 +350,13 @@ a {
   top: 0;
 }
 
-.catalog-genre-filter__inner, .cards-details__card, .about-shop__inner, .introduce__inner {
+.catalog-main__inner, .catalog-genre-filter__inner, .cards-details__card, .about-shop__inner, .introduce__inner {
   background: #fdfdfd;
   border-radius: 20px;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
-.catalog-genre-filter, .cards-details, .about-shop, .introduce {
+.catalog-main, .catalog-genre-filter, .cards-details, .about-shop, .introduce {
   margin-bottom: 54px;
 }
 
@@ -383,13 +383,13 @@ a {
   color: cornsilk;
 }
 
-.catalog-genre-filter__inner, .cards-details__card, .about-shop__inner, .introduce__inner {
+.catalog-main__inner, .catalog-genre-filter__inner, .cards-details__card, .about-shop__inner, .introduce__inner {
   background: #fdfdfd;
   border-radius: 20px;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
-.catalog-genre-filter, .cards-details, .about-shop, .introduce {
+.catalog-main, .catalog-genre-filter, .cards-details, .about-shop, .introduce {
   margin-bottom: 54px;
 }
 
@@ -402,13 +402,13 @@ a {
   flex-wrap: nowrap;
 }
 
-.catalog-genre-filter__inner, .cards-details__card, .about-shop__inner, .introduce__inner {
+.catalog-main__inner, .catalog-genre-filter__inner, .cards-details__card, .about-shop__inner, .introduce__inner {
   background: #fdfdfd;
   border-radius: 20px;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
-.catalog-genre-filter, .cards-details, .about-shop, .introduce {
+.catalog-main, .catalog-genre-filter, .cards-details, .about-shop, .introduce {
   margin-bottom: 54px;
 }
 
@@ -417,13 +417,13 @@ a {
   margin: 0 auto;
 }
 
-.catalog-genre-filter__inner, .cards-details__card, .about-shop__inner, .introduce__inner {
+.catalog-main__inner, .catalog-genre-filter__inner, .cards-details__card, .about-shop__inner, .introduce__inner {
   background: #fdfdfd;
   border-radius: 20px;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
-.catalog-genre-filter, .cards-details, .about-shop, .introduce {
+.catalog-main, .catalog-genre-filter, .cards-details, .about-shop, .introduce {
   margin-bottom: 54px;
 }
 
@@ -463,13 +463,13 @@ a {
   height: 450px;
 }
 
-.catalog-genre-filter__inner, .cards-details__card, .introduce__inner, .about-shop__inner {
+.catalog-main__inner, .catalog-genre-filter__inner, .cards-details__card, .introduce__inner, .about-shop__inner {
   background: #fdfdfd;
   border-radius: 20px;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
-.catalog-genre-filter, .cards-details, .introduce, .about-shop {
+.catalog-main, .catalog-genre-filter, .cards-details, .introduce, .about-shop {
   margin-bottom: 54px;
 }
 
@@ -523,13 +523,13 @@ a {
   width: 70%;
 }
 
-.catalog-genre-filter__inner, .introduce__inner, .about-shop__inner, .cards-details__card {
+.catalog-main__inner, .catalog-genre-filter__inner, .introduce__inner, .about-shop__inner, .cards-details__card {
   background: #fdfdfd;
   border-radius: 20px;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
-.catalog-genre-filter, .introduce, .about-shop, .cards-details {
+.catalog-main, .catalog-genre-filter, .introduce, .about-shop, .cards-details {
   margin-bottom: 54px;
 }
 
@@ -544,13 +544,13 @@ a {
   flex: 0 0 25%;
 }
 
-.catalog-genre-filter__inner, .introduce__inner, .about-shop__inner, .cards-details__card {
+.catalog-main__inner, .catalog-genre-filter__inner, .introduce__inner, .about-shop__inner, .cards-details__card {
   background: #fdfdfd;
   border-radius: 20px;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
-.catalog-genre-filter, .introduce, .about-shop, .cards-details {
+.catalog-main, .catalog-genre-filter, .introduce, .about-shop, .cards-details {
   margin-bottom: 54px;
 }
 
@@ -585,13 +585,13 @@ a {
   font-weight: 600;
 }
 
-.introduce__inner, .about-shop__inner, .cards-details__card, .catalog-genre-filter__inner {
+.catalog-main__inner, .introduce__inner, .about-shop__inner, .cards-details__card, .catalog-genre-filter__inner {
   background: #fdfdfd;
   border-radius: 20px;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
-.introduce, .about-shop, .cards-details, .catalog-genre-filter {
+.catalog-main, .introduce, .about-shop, .cards-details, .catalog-genre-filter {
   margin-bottom: 54px;
 }
 
@@ -621,6 +621,39 @@ a {
 }
 .catalog-genre-filter__item:hover {
   transform: translateY(-10px);
+}
+
+.filter-bar__search {
+  min-width: 240px;
+  width: 50%;
+  margin-bottom: 50px;
+}
+.filter-bar__search .input {
+  border: 1px solid #393DF2;
+}
+.filter-bar__select .select {
+  padding: 9px 20px;
+  border-radius: 45px;
+  border-width: 0;
+  background-color: #8EB6F6;
+  background-image: url("../image/select/caret-down-solid.svg");
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
+  appearance: none;
+}
+.filter-bar__select .select:active, .filter-bar__select .select:hover, .filter-bar__select .select:focus {
+  border-width: 0;
+  outline: none;
+  border-radius: 45px 0px;
+}
+.filter-bar__select .select__label {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.catalog-main__inner {
+  padding: 64px 78px;
 }
 
 /*# sourceMappingURL=style.css.map */

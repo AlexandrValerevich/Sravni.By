@@ -19,17 +19,6 @@
 
     &__item
     {
-        padding: 7px 34px;
-        line-height: 16px;
-
-        transition: 0.1s;
-
-        &_active,
-        &:hover:not(&_active)
-        {
-            @extend %btn-active-or-hover;
-        }
-        
         &:not(&:last-child){
             margin-right: 10px;
         }
@@ -38,10 +27,22 @@
 
     &__link
     {
-        color: global.$nav-text-color;
+        display: inline-block;
+        padding: 7px 34px;
 
+
+        color: global.$nav-text-color;
         font-size: global.$font-size-nav;
         font-weight: global.$font-wight-bold;
+        line-height: 16px;
+
+        transition: border-radius 0.1s;
+
+        &_active,
+        &:hover:not(&_active)
+        {
+            @extend %btn-active-or-hover;
+        }
     }
 
 

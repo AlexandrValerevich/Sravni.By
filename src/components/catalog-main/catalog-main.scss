@@ -1,0 +1,12 @@
+@import "./filter-bar/filter-bar.scss";
+
+.catalog-main
+{
+    @extend %block-spacing;
+
+    &__inner
+    {
+        @extend %common-box;
+        padding: 64px 78px;
+    }
+}
