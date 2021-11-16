@@ -299,7 +299,6 @@ a {
 
 .nav__link_active, .nav__link:hover:not(.nav__link_active) {
   background-color: #62a2f5;
-  border-radius: 45px;
   box-shadow: 5px 1px 17px rgba(0, 0, 0, 0.3);
 }
 
@@ -321,7 +320,8 @@ a {
   font-size: 0.75em;
   font-weight: 600;
   line-height: 16px;
-  transition: border-radius 0.1s;
+  transition: background-color 0.1s ease-in, box-shadow 0.1s ease-in;
+  border-radius: 45px;
 }
 .search-bar {
   position: relative;
