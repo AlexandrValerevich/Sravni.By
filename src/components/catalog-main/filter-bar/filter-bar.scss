@@ -1,5 +1,7 @@
 .filter-bar
 {
+    margin-bottom: 80px;
+
     &__search
     {
         min-width: 240px;
@@ -15,6 +17,7 @@
     {
         .select
         {
+            max-width: 250px;
             padding: 9px 20px;
             border-radius: 45px;
             border-width: 0;
@@ -33,7 +36,6 @@
             {
                 border-width: 0;
                 outline: none;
-                border-radius: 45px 0px ;
             }
 
             &__label

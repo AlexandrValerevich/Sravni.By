@@ -1,0 +1,13 @@
+@use "../../varibals-and-mixins.scss" as global;
+@import "./card-book/card-book.scss";
+
+.card-wrapper
+{
+    //@include global.flex-container-costomaize(row, flex-start, wrap);
+    //margin: 0px -25px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 45px;
+    grid-row-gap: 20px;
+}

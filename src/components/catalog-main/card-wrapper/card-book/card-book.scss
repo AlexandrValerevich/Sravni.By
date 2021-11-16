@@ -1,0 +1,103 @@
+@use "../../../varibals-and-mixins.scss" as global;
+
+.card-book
+{
+    //flex: 0 0 auto;
+    //margin: 0 25px 15px;
+
+    position: relative;
+    overflow: hidden;
+
+    grid-column: span 1;
+
+    border: 0.5px solid #393DF2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+    padding: 20px 30px 40px;
+
+    &__link
+    {
+        display: block;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+
+        width: 100%;
+        height: 100%;
+
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        opacity: 0;
+
+        transition: opacity 0.1s;
+
+        border-radius: 20px;
+        
+        &:hover
+        {
+            opacity: 1;
+        }
+
+        &::before
+        {
+            content: "Перейти на сайт";
+            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+
+            color: rgb(255, 255, 255);
+            font-size: 0.8em;
+
+
+
+        }
+    }
+
+    &__inner
+    {
+        @include global.flex-container-costomaize(column, space-between);
+        align-items: center;
+    }
+
+    &__image
+    {
+        text-align: center;
+        margin-bottom: 25px;
+
+        .img{
+            object-fit: contain;
+            width: 160px;
+            height: 200px;
+        }
+    }
+
+    &__price
+    {
+        text-transform: uppercase;
+        font-weight: global.$font-wight-bold;
+        font-size: 0.9375em;
+        margin-bottom: 20px;
+    }
+
+    &__title
+    {
+        font-size: 0.8125em;
+        text-align: justify;
+    }
+
+    // &::before
+    // {
+    //     content: "";
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+
+    //     width: 100%;
+    //     height: 100%;
+
+    //     background-color: rgba($color: #000000, $alpha: 0.3);
+    // }
+
+}
