@@ -9,12 +9,13 @@
     overflow: hidden;
 
     grid-column: span 1;
+    align-self: center;
 
     border: 0.5px solid #393DF2;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
 
-    padding: 20px 30px 40px;
+    padding: 20px 20px 25px;
 
     &__link
     {
@@ -50,8 +51,6 @@
             color: rgb(255, 255, 255);
             font-size: 0.8em;
 
-
-
         }
     }
 
@@ -75,29 +74,17 @@
 
     &__price
     {
-        position: relative;
         text-transform: uppercase;
         font-weight: global.$font-wight-bold;
         font-size: 0.9375em;
+        
         margin-bottom: 15px;
         padding: 5px 0px;
-
-        &::after
-        {
-            content: "";
-            position: absolute;
-            top: 50%;
-            right: 0;
-
-            transform: translateY(-50%);
-            width: 50%;
-            min-height: 100%;
-            background-image: url("../image/about-shop/shops/shop_4.png");
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: right;
-
-        }
+        
+        background-image: url("../image/about-shop/shops/shop_3.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
     }
 
     &__title
@@ -105,18 +92,5 @@
         font-size: 0.8125em;
         text-align: justify;
     }
-
-    // &::before
-    // {
-    //     content: "";
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-
-    //     width: 100%;
-    //     height: 100%;
-
-    //     background-color: rgba($color: #000000, $alpha: 0.3);
-    // }
 
 }
