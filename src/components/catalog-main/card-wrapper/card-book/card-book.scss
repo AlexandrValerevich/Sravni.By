@@ -64,7 +64,7 @@
     &__image
     {
         text-align: center;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
 
         .img{
             object-fit: contain;
@@ -75,10 +75,29 @@
 
     &__price
     {
+        position: relative;
         text-transform: uppercase;
         font-weight: global.$font-wight-bold;
         font-size: 0.9375em;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
+        padding: 5px 0px;
+
+        &::after
+        {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 0;
+
+            transform: translateY(-50%);
+            width: 50%;
+            min-height: 100%;
+            background-image: url("../image/about-shop/shops/shop_4.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right;
+
+        }
     }
 
     &__title

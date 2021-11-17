@@ -20,14 +20,16 @@
 
         transition: transform 0.2s;
 
-        a{
+        a
+        {
             text-transform: uppercase;
             font-size: global.$font-size-catalog-filter;
             font-weight: global.$font-wight-bold;
         }
          
 
-        .img{
+        .img
+        {
             object-fit: contain;
             width: 200px;
             height: 200px;

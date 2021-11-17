@@ -723,7 +723,7 @@ a {
 }
 .card-book__image {
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .card-book__image .img {
   object-fit: contain;
@@ -731,10 +731,25 @@ a {
   height: 200px;
 }
 .card-book__price {
+  position: relative;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 0.9375em;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  padding: 5px 0px;
+}
+.card-book__price::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 50%;
+  min-height: 100%;
+  background-image: url("../image/about-shop/shops/shop_4.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
 }
 .card-book__title {
   font-size: 0.8125em;
