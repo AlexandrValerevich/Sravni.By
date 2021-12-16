@@ -1,0 +1,28 @@
+@import './normalize.scss';
+@import '../components/global-variable/global-variable.scss';
+
+:root {
+  font-size: $font-size;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@function size-rem($size) {
+  @return $size/$font-size-ns * 1px * 1rem;
+}
+
+@function size-arr-rem($sizes...) {
+  $result: ();
+
+  @each $v in $sizes {
+    $v: $v/$font-size-ns * 1rem;
+    $result: append($result, $v * 1px, auto);
+  }
+
+  @return $result;
+}
+
