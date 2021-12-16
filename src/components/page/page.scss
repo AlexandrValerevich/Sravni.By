@@ -1,9 +1,0 @@
-@use "../varibals-and-mixins.scss" as global;
-
-
-.page
-{
-    min-height: 100vh;
-    overflow: hidden;
-    @include global.flex-container-costomaize(column, space-between);
-}
