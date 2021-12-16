@@ -6,11 +6,4 @@ html(lang="en")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         title Document
     body
-        .catalog
-            .container
-                .catalog__search-bar
-                    input#search(type="text" name="search" placeholder='Введите книгу')
-                    input(type="button" value="Найти")
-                .catalog__inner
-                    ls.catalog__list
-                        li.catalot__item
+        include .\components\catalog-main\catalog-main.pug

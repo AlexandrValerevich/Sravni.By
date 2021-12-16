@@ -1,0 +1,11 @@
+.catalog-main {
+  &__inner {
+    background: #fdfdfd;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 20px rgba(0,0,0, 0.25);
+    padding: 50px 65px;
+  }
+}
+
+@import './filter-bar/filter-bar.scss';
+@import './card-wrapper/card-wrapper.scss';
