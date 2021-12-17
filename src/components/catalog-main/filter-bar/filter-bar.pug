@@ -1,8 +1,11 @@
 .filter-bar
-    .filter-bar__search
+    .filter-bar__item
         .input__wrapper
-            input.input(type="text" name="search")
-    .filter-bar__select.select-bar
+            input.input#book-name(type="text" name="search")
+    .filter-bar__item
+        .button__wrapper
+            input.button#btn-find(type="button" value="Найти")
+    .filter-bar__item
         label.select__label(for="sort-select") Сортировать: 
         select.select#sort-select(name="sort" )
             option.select__option(value="По возрастанию цены") По возрастанию цены

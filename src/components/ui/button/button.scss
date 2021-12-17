@@ -1,0 +1,13 @@
+.button {
+  width: 100%;
+  border: 1px solid $color-theme;
+  background-color: $color-theme;
+  color: white;
+  border-radius: size-rem(45);
+  @include padding(5, 10);
+
+  &:active {
+    border-color: $color-ui;
+    background-color: $color-ui;
+  }
+}

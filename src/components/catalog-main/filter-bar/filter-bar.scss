@@ -1,37 +1,15 @@
 .filter-bar {
   margin-bottom: 80px;
 
-  &__search {
-    min-width: 240px;
-    width: 50%;
-    margin-bottom: 50px;
-  }
+  @include flex-container(row, flex-start, wrap);
 
-  &__select {
-    .select {
-      max-width: 250px;
-      padding: 9px 20px;
-      border-radius: 45px;
-      border-width: 0;
-      background-color: #8eb6f6;
+  &__item {
+    flex: 0 0 40%;
+    @include margin(0, 20, 50, 0);
 
-      //background-image: url('../image/select/caret-down-solid.svg');
-      background-repeat: no-repeat, repeat;
-      background-position: right 0.7em top 50%, 0 0;
-      background-size: 0.65em auto, 100%;
-      appearance: none;
-
-      &:active,
-      &:hover,
-      &:focus {
-        border-width: 0;
-        outline: none;
-      }
-
-      &__label {
-        display: inline-block;
-        margin-right: 5px;
-      }
+    &:nth-child(2)
+    {
+      flex-basis: 20%;
     }
   }
 }
