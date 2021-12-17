@@ -1,9 +1,9 @@
 @mixin padding($values...) {
-  padding: calc-relative-size-arr($values...);
+  padding: size-arr-rem($values...);
 }
 
 @mixin margin($values...) {
-  margin: calc-relative-size-arr($values...);
+  margin: size-arr-rem($values...);
 }
 
 @mixin flex-container($direction, $justify: space-between, $wrap: nowrap) {

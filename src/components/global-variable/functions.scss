@@ -1,12 +1,12 @@
 @function size-rem($size) {
-  @return $size/$font-size-ns * 1px * 1rem;
+  @return $size/$font-size * 1px * 1rem;
 }
 
 @function size-arr-rem($sizes...) {
   $result: ();
 
   @each $v in $sizes {
-    $v: $v/$font-size-ns * 1rem;
+    $v: $v/$font-size * 1rem;
     $result: append($result, $v * 1px, auto);
   }
 
