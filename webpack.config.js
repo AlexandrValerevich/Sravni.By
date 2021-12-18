@@ -6,7 +6,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   entry: {
-    main: './index.js',
+    main: ['./index.js', "@babel/polyfill", "whatwg-fetch"], 
   },
   output: {
     path: path.resolve(__dirname, 'dest'),
@@ -41,7 +41,17 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', '@babel/preset-typescript'],
+            presets: [
+              [
+                '@babel/preset-env',
+                {
+                  useBuiltIns: 'usage',
+                  corejs: 3,
+                },
+              ],
+              '@babel/preset-typescript',
+            ],
+            plugins: ['@babel/plugin-transform-runtime'],
           },
         },
       },

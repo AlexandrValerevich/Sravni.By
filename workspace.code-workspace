@@ -7,7 +7,7 @@
             "path": "./src"
         },
         {
-            "path": "./src/components"
+            "path": "./src/ts"
         }
     ]
 }
