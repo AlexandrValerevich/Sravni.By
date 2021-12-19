@@ -10,7 +10,8 @@ function searchText() {
 
 let findBook = async () => {
   let bookName = searchText();
-  let books = await getBooks(bookName);
+	let books = await getBooks(bookName);
+	
 
   CardManager.clean();
   CardManager.add(...books);
