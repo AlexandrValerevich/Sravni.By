@@ -4,7 +4,6 @@ let $selectSort = <HTMLSelectElement>document.getElementById('sort-select');
 
 let changeSort = function () {
 	let chosenSort = $selectSort.value;
-	
 	SortCardBook[chosenSort]();
 };
 

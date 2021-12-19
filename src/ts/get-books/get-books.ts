@@ -17,7 +17,7 @@ let getDefaultBooks = async function () {
     'Java',
     '.Net',
     'Kotlin',
-    'UI/UX',
+    'UI UX',
   ];
   let len = booksName.length;
 
