@@ -1,10 +1,6 @@
 .filter-bar
     .filter-bar__item
-        .input__wrapper
-            input.input#search(type="text" name="search")
-    .filter-bar__item
-        .button__wrapper
-            input.button#btn(type="button" value="Найти")
+        include ./search/search.pug
     .filter-bar__item
         label.select__label(for="sort-select") Сортировать: 
         select.select#sort-select(name="sort" )

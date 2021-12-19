@@ -4,7 +4,7 @@
   background-color: $color-theme;
   color: white;
   border-radius: size-rem(45);
-  @include padding(5, 10);
+  @include padding(9, 20);
 
   &:active {
     border-color: $color-ui;

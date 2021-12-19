@@ -2,14 +2,12 @@
   margin-bottom: size-rem(20);
 
   @include flex-container(row, flex-start, wrap);
+  align-items: center;
 
   &__item {
-    flex: 0 0 40%;
-    @include margin(0, 20, 50, 0);
-
-    &:nth-child(2)
-    {
-      flex-basis: 20%;
-    }
+    flex: 0 1 100%;
+    @include margin(0, 0, 50, 0);
   }
 }
+
+@import './search/search.scss';

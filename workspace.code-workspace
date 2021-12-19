@@ -7,7 +7,10 @@
             "path": "./src"
         },
         {
-            "path": "./src/ts"
+            "path": "./src/components/catalog-main/filter-bar"
+        },
+        {
+            "path": "./src/components/ui"
         }
     ]
 }

@@ -3,12 +3,18 @@
 @import '../components/global-variable/global-variable.scss';
 @import '../components/catalog-main/catalog-main.scss';
 
+
+html{
+  display: inline;
+}
+
 :root {
   font-size: $font-size;
   font-family: 'Open Sans', sans-serif;
 }
 
 body {
+  min-height: 100vh;
   padding: 30px 0;
   position: relative;
 }

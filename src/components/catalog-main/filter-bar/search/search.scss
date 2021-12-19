@@ -1,0 +1,12 @@
+.search{
+    @include flex-container(row, flex-start);
+
+    &__input{
+        @include margin(0,20,0,0);
+        flex: 4 0 auto;
+    }
+
+    &__button {
+        flex: 1 0 auto;
+    }
+}

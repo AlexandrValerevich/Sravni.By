@@ -6,7 +6,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   entry: {
-    main: ['./index.js', "@babel/polyfill", "whatwg-fetch"], 
+    main: ['./index.js', "@babel/polyfill", "whatwg-fetch"],
   },
   output: {
     path: path.resolve(__dirname, 'dest'),
